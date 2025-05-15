@@ -7,11 +7,13 @@ All you need to run this is ensure [Docker](https://docs.docker.com/desktop/setu
 ## Running the Project
 
 ### Starting the Service
-To run the project, just call `sh ./ollama-docker.sh up`.
+To run ollama-docker, just run `sh ./ollama-docker.sh up`.
 
 ### Stopping the Service
-To stop the project, just call `sh ./ollama-docker.sh down`.
+To stop ollama-docker, just run `sh ./ollama-docker.sh down`.
 
+### Checking to See if the Service is Running
+To see the status of ollama-docker, just run `sh ./ollama-docker.sh status`.
 
 ## How it Works
 
