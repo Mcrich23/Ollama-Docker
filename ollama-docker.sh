@@ -43,8 +43,17 @@ case "$1" in
     # Kill tmux session
     tmux kill-session -t "$SESSION_NAME" &
     ;;
+  status)
+    # Check if the tmux session exists
+    if tmux has-session -t "$SESSION_NAME" 2>/dev/null; then
+      echo "[INFO] Services are running"
+    else
+      echo "[INFO] No services are running"
+    fi
+    exit 0
+    ;;
   *)
-    echo "Usage: $0 {up | down}"
+    echo "Usage: $0 {up|status|down}"
     exit 1
     ;;
 esac
