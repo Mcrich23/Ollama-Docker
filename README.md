@@ -5,6 +5,12 @@ A project to better run Ollama on Mac with all the optimizations.
 All you need to run this is ensure [Docker](https://docs.docker.com/desktop/setup/install/mac-install/), [tmux](https://tmuxcheatsheet.com/how-to-install-tmux/), and the [Ollama App](https://ollama.com/download) are already installed
 
 ## Running the Project
+You can absolutely run this project just by cd-ing into this folder and following the instructions below, but I personally recommend adding the following line to your `.zprofile` to make it callable from anywhere: 
+```sh
+alias ollama-docker='/path/to/ollama-docker/ollama-docker.sh'
+```
+
+After adding it, make sure to run `source ~/.zprofile` to make it available to your current terminal session.
 
 ### Starting the Service
 To run ollama-docker, just run `sh ./ollama-docker.sh up`.
